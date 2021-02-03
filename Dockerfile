@@ -14,7 +14,7 @@ MAINTAINER Florian Mauduit <f@lf.je>
 ###
 
 ## Server Port
-ENV BLYNK_SERVER_VERSION 0.41.7
+ENV BLYNK_SERVER_VERSION 0.41.15
 ENV HARDWARE_MQTT_PORT 8440
 ENV HTTP_PORT 8080
 ENV HTTPS_PORT 9443
@@ -85,7 +85,7 @@ RUN mkdir /config && touch /config/server.properties
 VOLUME ["/config", "/data/backup"]
 
 RUN mkdir -p /usr/local/bin
-ADD ./bin /usr/local/bin
+ADD /bin /usr/local/bin
 RUN chmod +x /usr/local/bin/*.sh
 
 EXPOSE ${HARDWARE_MQTT_PORT} ${HARDWARE_MQTT_PORT_SSL} ${HTTP_PORT} ${HTTPS_PORT}
