@@ -72,7 +72,7 @@ ENV SERVER_HOST huyorchid.duckdns.org
 ############################################################
 # Install OpenJDK
 #RUN apt update && apt install -y openjdk-11-jdk libxrender1 maven
-RUN apt install -y curl
+#RUN apt install -y curl
 
 
 ############################################################
