@@ -1,4 +1,4 @@
-FROM openjdk:11-jre
+FROM --platform=linux/arm64
 MAINTAINER Florian Mauduit <f@lf.je>
 
 #############################################################
