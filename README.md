@@ -21,8 +21,10 @@ Don't forget to change the port attribution if you change on the ENV vars in Doc
 
 
 ## UPDATE Blynk version
+```bash
 mkdir -p ~/blynk-server/server/Docker:/data 
-docker run --name blynk-server -v ~/blynk-server/server/Docker:/data -p 8440:8440 -p 8080:8080 -p 9443:9443 -d linuxkonsult/rasbian-blynk
+docker run --name blynk-server -v ~/blynk-server/server/Docker:/data -p 8440:8440 -p 8080:8080 -p 9443:9443 -d huykent/blynk-server
+```
 ## How to
 
 Stop and remove your actual container
