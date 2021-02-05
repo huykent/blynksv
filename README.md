@@ -21,7 +21,8 @@ Don't forget to change the port attribution if you change on the ENV vars in Doc
 
 
 ## UPDATE Blynk version
-
+mkdir -p ~/blynk-server/server/Docker:/data 
+docker run --name blynk-server -v ~/blynk-server/server/Docker:/data -p 8440:8440 -p 8080:8080 -p 9443:9443 -d linuxkonsult/rasbian-blynk
 ## How to
 
 Stop and remove your actual container
@@ -35,3 +36,5 @@ docker stop blynk-server && docker rm blynk-server
 
 
 Have Fun ! :v: :whale:
+
+
